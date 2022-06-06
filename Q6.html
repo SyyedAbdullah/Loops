@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // - question 6 -->
+        var math = +prompt("enter your maths marks ");
+        var urdu = +prompt("enter your urdu marks ");
+        var eng = +prompt("enter your eng marks ");
+        var totalmarks = 300
+        var obtained = math + urdu + eng;
+        var pe = (obtained / totalmarks) * 100;
+        document.write("<h1> marks sheet </h1>");
+        document.write(" <br> obtained marks=" + obtained);
+        document.write(" <br> total marks of subj=" + totalmarks);
+        document.write(" <br> percentage=" + pe + "<br>");
+
+        if (pe <= 60) {
+            alert("C grade")
+            alert("you need to improve")
+            document.write("C grade" + "<br>")
+            document.write("you need to improve")
+        } else {
+            alert("B GRADE")
+            document.write("B grade" + "<br>")
+            document.write("good")
+        }
+
+        if (pe <= 70) {
+            alert("B grade")
+            alert("you need to improve")
+            document.write("B grade" + "<br>") \
+            documentt.write("you need to improve")
+        } else {
+            alert("A GRADE")
+            document.write("A grade" + "<br>")
+            document.write("Amazing")
+        }
+
+        if (pe <= 80) {
+            alert("A grade")
+            alert("excellent")
+            document.write("A grade" + "<br>")
+            document.write("excellent")
+        } else {
+            alert("A-one GRADE")
+            document.write("A-one grade" + "<br>")
+            document.write("very excellent")
+        }
+        
+    </script>
+</body>
+</html>
